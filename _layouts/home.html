@@ -5,39 +5,75 @@ layout: default
 <section class="hero">
   <h1>Invierte en España <span>sin complicaciones</span></h1>
   <p>Guías claras y comparativas honestas de brokers para principiantes. Sin jerga, sin letra pequeña.</p>
-  <a href="#articulos" class="btn">Ver guías →</a>
+  <a href="#articulos" class="btn">Ver guías gratuitas →</a>
 </section>
 
-<section class="features">
-  <div class="feature-card">
-    <span class="icon">🔍</span>
-    <h3>Comparativas honestas</h3>
-    <p>Analizamos cada broker sin conflictos de interés para que elijas con criterio.</p>
-  </div>
-  <div class="feature-card">
-    <span class="icon">📚</span>
-    <h3>Guías desde cero</h3>
-    <p>Explicamos todo como si fuera la primera vez. Sin asumir conocimientos previos.</p>
-  </div>
-  <div class="feature-card">
-    <span class="icon">🇪🇸</span>
-    <h3>Enfocado en España</h3>
-    <p>Solo brokers disponibles y regulados en España, con fiscalidad española.</p>
-  </div>
-</section>
+<div class="container">
 
-<section id="articulos" class="posts-section">
-  <h2>Últimas guías</h2>
-  <div class="posts-grid">
-    {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="post-card">
-      <span class="post-card-category">Guía</span>
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.description }}</p>
-      <span class="read-more">Leer más →</span>
-    </a>
-    {% endfor %}
+  <div class="stats-bar">
+    <div class="stat-card">
+      <span class="num">+15</span>
+      <span class="label">Brokers analizados</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">0€</span>
+      <span class="label">Coste de las guías</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">100%</span>
+      <span class="label">Opinión independiente</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">2026</span>
+      <span class="label">Datos actualizados</span>
+    </div>
   </div>
-</section>
 
-{{ content }}
+  <div class="broker-top">
+    <div>
+      <span class="badge">⭐ Recomendado para empezar</span>
+      <h3>Trade Republic — El mejor broker para principiantes en 2026</h3>
+      <p>Sin comisiones, cuenta remunerada al 3% TAE y app muy intuitiva. Regulado y disponible en España.</p>
+    </div>
+    <a href="#" class="btn-verde">Ver análisis completo →</a>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <span class="icon">🔍</span>
+      <h3>Comparativas honestas</h3>
+      <p>Analizamos cada broker sin conflictos de interés para que elijas con criterio real.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">📚</span>
+      <h3>Guías desde cero</h3>
+      <p>Explicamos todo como si fuera la primera vez. Sin asumir ningún conocimiento previo.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">🇪🇸</span>
+      <h3>Enfocado en España</h3>
+      <p>Solo brokers disponibles y regulados en España, con fiscalidad española explicada.</p>
+    </div>
+  </div>
+
+  <section id="articulos" class="posts-section">
+    <div class="section-header">
+      <h2>Últimas guías</h2>
+    </div>
+    <div class="posts-grid">
+      {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="post-card">
+        <span class="post-card-category">Guía</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <span class="read-more">Leer más →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="aviso">
+    ⚠️ <strong>Aviso legal:</strong> El contenido de esta web es meramente informativo y no constituye asesoramiento financiero. Invertir conlleva riesgo de pérdida de capital.
+  </div>
+
+</div>
