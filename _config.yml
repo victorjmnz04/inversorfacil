@@ -27,7 +27,7 @@ url: "https://victorjmnz04.github.io" # the base hostname & protocol for your si
 lang: es
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
